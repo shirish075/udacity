@@ -14,7 +14,7 @@ env:
   ECR_REPOSITORY: frontend
   EKS_CLUSTER: cluster
   IMAGE_TAG: ${{ github.sha }}
-  REACT_APP_MOVIE_API_URL: REACT_APP_MOVIE_API_URL: http://a62099888f2eb462b8386930db951445-1909878713.us-east-1.elb.amazonaws.com
+  REACT_APP_MOVIE_API_URL:  http://a62099888f2eb462b8386930db951445-1909878713.us-east-1.elb.amazonaws.com
 git commit -m "Add frontend and backend CD"
 git push origin main
 
