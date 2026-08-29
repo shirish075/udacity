@@ -66,6 +66,7 @@ jobs:
   build-and-deploy:
     needs: [lint, test]
     runs-on: ubuntu-latest
+    environment: udacity
     defaults:
       run:
         working-directory: starter/frontend
