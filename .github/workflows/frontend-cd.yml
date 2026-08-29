@@ -104,7 +104,7 @@ jobs:
         run: aws eks update-kubeconfig --region "$AWS_REGION" --name "$EKS_CLUSTER"
 
       - name: Deploy Kubernetes manifests
-        run: kubectl apply -k .
+        run: kubectl apply -k k8s
 
       - name: Update deployment image
         env:
